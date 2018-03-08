@@ -14,7 +14,16 @@ setImmediate(function() {
 setTimeout(function() {
     console.log('timeout1');
     process.nextTick(function() {
-        console.log('timeout1_nextTick');
+        console.log('timeout1_nextTick1111111111111111');
+    })
+    process.nextTick(function() {
+        console.log('timeout1_nextTick22222222222');
+    })
+     process.nextTick(function() {
+        console.log('timeout1_nextTick333333333333');
+    })
+      process.nextTick(function() {
+        console.log('timeout1_nextTick44444444444');
     })
     new Promise(function(resolve) {
         console.log('timeout1_promise');
